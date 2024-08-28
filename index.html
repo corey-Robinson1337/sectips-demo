@@ -17,19 +17,22 @@
             }
         }
     </style>
-<body>
-<h1>hello!</h1>
-<!-- SecurityTips Embed Code -->
-<script> 
+    <script> 
     (function()  {
     var s = document.createElement('script');
     var h = document.querySelector('head') || document.body;
     s.src = 'https://cdnx.securitytips.com/etp.js';
     s.async = true; 
-    s.onload = function(){ etp.init({ etp_number : "WprdzxRrjT47hIzE", language: 'en', position: 'left', primaryColor: "#00b3e5", secondaryColor: "#062f4a", tertiaryColor: '#062f4a', buttonColor: "#1177bb", buttonRadius: '50%',  buttonPositionX: "left", buttonPositionY: "bottom", buttonIcon: "sc-tree", buttonSize: "large", buttonOffsetX: 20, buttonOffsetY: 20, consumer_mode: true }); };
+    s.onload = function(){ etp.init({ etp_number : "WprdzxRrjT47hIzE", buttonAltId: ["etp-test-1", "etp-test-2"], language: 'en', position: 'left', primaryColor: "#00b3e5", secondaryColor: "#062f4a", tertiaryColor: '#062f4a', buttonColor: "#1177bb", buttonRadius: '50%',  buttonPositionX: "left", buttonPositionY: "bottom", buttonIcon: "sc-tree", buttonSize: "large", buttonOffsetX: 20, buttonOffsetY: 20, consumer_mode: true }); };
     h.appendChild(s);
     })();
     </script>
+</head>
+<body>
+<h1>hello!</h1>
+<!-- SecurityTips Embed Code -->
+<button id="etp-test-1">ETP test 1</button>
+<button id="etp-test-2">ETP test 2</button>
 </body>
 
 </html>
