@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Parameter Alert</title>
+</head>
+<body>
+    <h1>Query Parameter Alert</h1>
+    <p>Check the alert for the query parameters.</p>
+
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            let queryParams = '';
+            params.forEach((value, key) => {
+                queryParams += `${key}: ${value}\n`;
+            });
+            return queryParams;
+        }
+
+        // Display the query parameters in an alert
+        const queryParams = getQueryParams();
+        if (queryParams) {
+            alert('Query Parameters:\n' + queryParams);
+        } else {
+            alert('No query parameters found.');
+        }
+    </script>
+</body>
+</html>
